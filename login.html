@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Tile </title>
+</head>
+<body>
+<div class="container">
+
+    <h4>Please Login</h4>
+
+<form action="" class="form-inline" method="post">
+  <input type="text" class="form-control" placeholder="Username" name="username" value="">
+  <input type="text" class="form-control" placeholder="Password" name="password" value="">
+  <input class="btn btn-default" type="submit" value="Login">
+</form>
+{% if error %}
+        <p class="error">
+            <strong>Error:</strong> {{ error }}
+            {% endif %}
+</div>
+
+</body>
+</html>
